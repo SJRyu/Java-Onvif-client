@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../ver20/util/onvif-wsdl-viewer.xsl"?>
+
+<wsdl:definitions
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/"
+        targetNamespace="http://www.onvif.org/ver20/imaging/wsdl">
+    <wsdl:import namespace="targetNamespace"
+                 location="https://www.onvif.org/onvif/ver20/imaging/wsdl/imaging.wsdl"/>
+
+    <wsdl:service name="ImagingService">
+        <wsdl:port name="ImagingServicePort" binding="timg:ImagingBinding">
+            <soap:address location="https://www.onvif.org/onvif/ver20/imaging/wsdl/imaging.wsdl"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

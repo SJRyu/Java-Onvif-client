@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../ver20/util/onvif-wsdl-viewer.xsl"?>
+
+<wsdl:definitions
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/"
+        targetNamespace="http://www.onvif.org/ver20/ptz/wsdl">
+    <wsdl:import namespace="targetNamespace"
+                 location="https://www.onvif.org/onvif/ver20/ptz/wsdl/ptz.wsdl"/>
+
+    <wsdl:service name="PTZService">
+        <wsdl:port name="PTZServicePort" binding="tptz:PTZBinding">
+            <soap:address location="https://www.onvif.org/onvif/ver20/ptz/wsdl/ptz.wsdl"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Sep 09 17:42:50 KST 2019
+onejar.license.required=true
+excludes=<po|jonvif-client>~sjryu/~onvif/~client/~app/~ClientTest.class;<po|jonvif-client>~wsdl/;<po|jonvif-client>~binding.xml;<po|jonvif-client>~bug.txt;<po|jonvif-client>~genAll.bat;<po|jonvif-client>~genClass.cmd
+manifest.removesigners=true
+manifest.mergeall=true
+includes=
+onejar.checkbox=false
+onejar.expand=
+manifest.classpath=
+jarname=jonvif-client.jar
+jarname.isextern=false
+manifest.file=<createnew>
+manifest.mainclass=

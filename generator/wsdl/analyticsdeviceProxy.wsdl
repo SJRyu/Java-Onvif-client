@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../ver20/util/onvif-wsdl-viewer.xsl"?>
+
+<wsdl:definitions
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/"
+        xmlns:tad="http://www.onvif.org/ver10/analyticsdevice/wsdl"
+        targetNamespace="http://www.onvif.org/ver10/analyticsdevice/wsdl">
+    <wsdl:import namespace="targetNamespace"
+                 location="analyticsdeviceWsimport.wsdl"/>
+
+    <wsdl:service name="AnalyticsDeviceService">
+        <wsdl:port name="AnalyticsDeviceServicePort" binding="tad:AnalyticsDeviceBinding">
+            <soap:address location="https://www.onvif.org/onvif/ver10/analyticsdevice.wsdl"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

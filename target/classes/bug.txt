@@ -1,0 +1,1 @@
+wsimport 버그로 schemalocation에는 상대경로 아니면 https를 찍어야 함.

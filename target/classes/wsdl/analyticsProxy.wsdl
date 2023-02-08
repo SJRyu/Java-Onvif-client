@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../ver20/util/onvif-wsdl-viewer.xsl"?>
+
+<wsdl:definitions
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/"
+        xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl"
+        targetNamespace="http://www.onvif.org/ver20/analytics/wsdl">
+    <wsdl:import namespace="targetNamespace"
+                 location="https://www.onvif.org/onvif/ver20/analytics/wsdl/analytics.wsdl"/>
+
+    <wsdl:service name="RuleEngineService">
+        <wsdl:port name="RuleEngineServicePort" binding="tan:RuleEngineBinding">
+            <soap:address location="https://www.onvif.org/onvif/ver20/analytics/wsdl/analytics.wsdl"/>
+        </wsdl:port>
+    </wsdl:service>
+    <wsdl:service name="AnalyticsEngineService">
+        <wsdl:port name="AnalyticsEngineServicePort" binding="tan:AnalyticsEngineBinding">
+            <soap:address location="https://www.onvif.org/onvif/ver20/analytics/wsdl/analytics.wsdl"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>
