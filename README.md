@@ -1,5 +1,5 @@
 
-An example of using JAX-WS into Onvif-client.
+An example of JAX-WS into Onvif-client.
 
 Eclipse with JDK 7 or higher.
 
